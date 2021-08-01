@@ -1,0 +1,40 @@
+{
+  "name": "layout-designer-project-lvl3",
+  "version": "1.0.0",
+  "description": "Layout design for \"Vilerchat\".",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VilerIT/layout-designer-project-lvl3.git"
+  },
+  "author": "VilerIT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VilerIT/layout-designer-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/VilerIT/layout-designer-project-lvl3#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "htmlhint": "^0.15.1",
+    "node-sass": "^6.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.20.1",
+    "surge": "^0.23.0"
+  }
+}
