@@ -28,6 +28,7 @@ const sass2css = () => {
 const pug2html = () => {
   return src([
     'app/pages/index.pug',
+    'app/pages/chat.pug',
   ])
     .pipe(pug())
     .pipe(dest('./build/'))
