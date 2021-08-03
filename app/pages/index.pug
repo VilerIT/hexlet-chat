@@ -1,6 +1,12 @@
 doctype html
-html
+html.h-100
   include includes/head.pug
-  +head('Hello, World!')
-  body
-    h1.hello-world Hello World.
+  +head('VilerChat')
+  body.bg-gray.p-4.h-100
+    .container-fluid.container-xxl.h-100.overflow-hidden
+      .row.h-100
+        main.col-12.col-md-4.d-flex.flex-column.h-100.p-0
+          include includes/header.pug
+          .h-100.border-right.bg-white.rounded-md-bottom-left
+            .rounded-md-bottom-left.h-100
+        .d-flex.col-12.col-md-8.h-100.p-0.bg-white.rounded-md-top-right.rounded-md-bottom-right
