@@ -1,6 +1,8 @@
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
 
+$enable-shadows: true;
+
 // Custom theme colors
 
 $gray: #efefef;
@@ -24,6 +26,10 @@ $theme-colors: (
   'light': $light,
   'dark': $dark,
 );
+
+// Border color override
+
+$border-color: $gray;
 
 // Custom grid breakpoints and container widths
 
