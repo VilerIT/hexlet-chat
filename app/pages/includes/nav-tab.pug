@@ -1,0 +1,9 @@
+//- href - the href attribute of <a>
+//- src - the source of the tab's icon
+//- name - the displayed name of the tab
+mixin navTab(href, src, name)
+  a.text-white.border-0.nav-link(href=`${href}`)
+    .d-flex.align-items-center
+      svg.mr-2.h-25px.w-25px(fill='currentColor')
+        use(xlink:href=`${src}`)
+      span.small.navbar-text= name

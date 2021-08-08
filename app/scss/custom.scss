@@ -49,8 +49,11 @@ $container-max-widths: map-merge($container-max-widths, $custom-container-max-wi
 
 // Optional Bootstrap components here
 
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import './components/nav';
 @import '../../node_modules/bootstrap/scss/root';
 @import '../../node_modules/bootstrap/scss/reboot';
 @import '../../node_modules/bootstrap/scss/type';
 @import '../../node_modules/bootstrap/scss/grid';
-@import 'utilities';
+@import './utilities';
