@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  align-items: center;
+
+  padding: 0 $spacer;
+
+  color: inherit;
+
+  cursor: pointer;
+
+  @include box-shadow($box-shadow-sm);
+  @include transition($btn-transition);
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: $spacer * 1.5;
+  }
+
+  &-name {
+    font-weight: bold;
+  }
+
+  &-status {
+    color: $secondary;
+    font-size: 80%;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+
+    background: $purple;
+  }
+
+  &:hover &-name,
+  &:hover &-status {
+    color: $white;
+  }
+}

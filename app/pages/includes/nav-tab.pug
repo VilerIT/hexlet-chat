@@ -2,8 +2,8 @@
 //- src - the source of the tab's icon
 //- name - the displayed name of the tab
 mixin navTab(href, src, name)
-  a.text-white.border-0.nav-link(href=`${href}`)
+  a(href=`${href}`).text-white.border-0.nav-link
     .d-flex.align-items-center
-      svg.mr-2.h-25px.w-25px(fill='currentColor')
+      svg(fill='currentColor').mr-2.h-25px.w-25px
         use(xlink:href=`${src}`)
-      span.small.navbar-text= name
+      span.small.navbar-text.d-none.d-md-inline= name
