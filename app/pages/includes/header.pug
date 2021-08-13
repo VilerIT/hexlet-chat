@@ -1,11 +1,11 @@
-include ./nav-tab.pug
+include ../components/nav-tab.pug
 .p-0.rounded-md-top-left.bg-white.order-1.order-md-0
   .d-flex.bg-primary.rounded-md-top-left.text-white.p-3.align-items-center.justify-content-end
     .d-flex.align-items-center.navbar-brand.mr-auto.p-0
       svg.h-25px.w-25px(fill='currentColor')
         use(xlink:href='images/icons/sprite.svg#logo')
     nav
-      ul.nav.nav-tabs.border-0
-        +navTab('#contacts', 'images/icons/sprite.svg#people', 'Контакты')
-        +navTab('#chat', 'images/icons/sprite.svg#chat', 'Сообщения')
-        +navTab('#profile', 'images/icons/sprite.svg#person', 'Профиль')
+      ul.nav.nav-tabs.border-0(role='tablist')
+        +navTab('contacts', 'images/icons/sprite.svg#people', 'Контакты', 'true')
+        +navTab('chats', 'images/icons/sprite.svg#chat', 'Сообщения', 'false')
+        +navTab('profile', 'images/icons/sprite.svg#person', 'Профиль', 'false')

@@ -11,23 +11,33 @@
   @include box-shadow($box-shadow-sm);
   @include transition($btn-transition);
 
-  &-info {
+  &-body {
     display: flex;
     flex-direction: column;
 
     width: 100%;
 
-    padding: $spacer * 1.5;
+    padding: map-get($spacers, 4);
   }
 
   &-name {
     font-weight: bold;
   }
 
-  &-status {
+  &-desc {
     color: $secondary;
-    font-size: 80%;
+    font-size: $small-font-size;
     text-overflow: ellipsis;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-time {
+    color: $secondary;
+    font-size: $small-font-size;
   }
 
   &:hover {
@@ -38,7 +48,8 @@
   }
 
   &:hover &-name,
-  &:hover &-status {
+  &:hover &-desc,
+  &:hover &-time {
     color: $white;
   }
 }

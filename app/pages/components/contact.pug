@@ -1,0 +1,18 @@
+//- Contact component
+//-
+//- Displays a contact with additional information and avatar.
+//-
+//- avatarSrc - The source file of avatar.
+//- name - The name of the contact.
+//- desc - The description, that is displayed below the name.
+//- time (optional) - Time that will be displayed right to the name. 
+
+mixin contact(avatarSrc, name, desc, time=null)
+  a.contact.mb-3(href='#')
+    img.avatar(src=`${avatarSrc}` alt='Аватар пользователя')
+    .contact-body
+      .contact-title
+        span.contact-name= name
+        if time
+          span.contact-time= time
+      span.contact-desc= desc

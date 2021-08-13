@@ -1,5 +1,11 @@
 .nav-tabs {
+  .nav-link {
+    background-color: $primary !important;
+  }
+
   .nav-link:hover {
     color: $gray-300 !important;
+
+    background-color: $primary !important;
   }
 }

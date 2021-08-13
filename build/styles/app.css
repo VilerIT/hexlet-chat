@@ -3786,8 +3786,12 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+.nav-tabs .nav-link {
+  background-color: #4545a5 !important; }
+
 .nav-tabs .nav-link:hover {
-  color: #dee2e6 !important; }
+  color: #dee2e6 !important;
+  background-color: #4545a5 !important; }
 
 .avatar {
   width: 50px;
@@ -3805,23 +3809,30 @@ textarea.form-control {
   @media (prefers-reduced-motion: reduce) {
     .contact {
       transition: none; } }
-  .contact-info {
+  .contact-body {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 1.5rem; }
   .contact-name {
     font-weight: bold; }
-  .contact-status {
+  .contact-desc {
     color: #6c757d;
     font-size: 80%;
     text-overflow: ellipsis; }
+  .contact-title {
+    display: flex;
+    justify-content: space-between; }
+  .contact-time {
+    color: #6c757d;
+    font-size: 80%; }
   .contact:hover {
     color: inherit;
     text-decoration: none;
     background: #6f42c1; }
   .contact:hover .contact-name,
-  .contact:hover .contact-status {
+  .contact:hover .contact-desc,
+  .contact:hover .contact-time {
     color: #fff; }
 
 :root {

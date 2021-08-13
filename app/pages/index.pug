@@ -3,12 +3,14 @@ html(lang='ru').h-100
   include includes/head.pug
   +head('VilerChat')
   body.bg-gray.p-md-4.h-100
-    .container-fluid.container-xxl.h-100.overflow-hidden
+    .container-fluid.container-xxl.h-100.overflow-hidden.rounded-md-bottom-left
       .row.h-100
         main.col-12.col-md-4.d-flex.flex-column.h-100.p-0
           include includes/header.pug
-          include includes/contacts.pug
-        .d-flex.flex-column.justify-content-center.align-items-center.col-12.col-md-8.h-100.p-0.bg-white.rounded-md-top-right.rounded-md-bottom-right
+          .tab-content.h-100.hide-scrollbar
+            include includes/contacts.pug
+            include includes/chats.pug
+        .d-flex.flex-column.justify-content-center.align-items-center.border-left.col-12.col-md-8.h-100.p-0.bg-white.rounded-md-top-right.rounded-md-bottom-right
           img(src='images/avatar_1.jpg' alt='Картинка празднующего человека').rounded-circle.mb-3
           span.font-weight-bold Привет, Кодовёнок
           span.text-muted.small Выбери чат, чтобы начать общаться

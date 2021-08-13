@@ -1,0 +1,29 @@
+-
+  const chats = [
+    {
+      name: 'Вениамин Редакторович',
+      lastMessage: 'o_O',
+      avatar: '/images/avatar_6.jpg',
+      time: '11:45',
+    },
+    {
+      name: 'Джедай Падаванов',
+      lastMessage: 'Привет, скоро третий проект? Уже скоро надо...',
+      avatar: '/images/avatar_2.jpg',
+      time: '10:12',
+    },
+    {
+      name: 'Алексей Примадонин',
+      lastMessage: 'Тесты упали >_<',
+      avatar: '/images/avatar_3.jpg',
+      time: '08:53',
+    },
+  ];
+
+include ../components/contact.pug
+.tab-pane.fade.h-100.bg-white.pt-5.px-4.hide-scrollbar#chats(role='tabpanel' aria-labelledby='chats-tab')
+  h1.h2.font-weight-bold.mb-4 Чаты
+  input(type='text' placeholder='Поиск по сообщениям').form-control.border-0.border-bottom.mb-5.p-4.shadow-none
+  each chat in chats
+    - const { name, lastMessage, avatar, time } = chat;
+    +contact(avatar, name, lastMessage, time)
