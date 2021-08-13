@@ -39,7 +39,7 @@
 include ../components/contact.pug
 .tab-pane.fade.show.active.h-100.bg-white.pt-5.px-4.hide-scrollbar#contacts(role='tabpanel' aria-labelledby='contacts-tab')
     h1.h2.font-weight-bold.mb-4 Контакты
-    input(type='text' placeholder='Поиск по контактам').form-control.border-0.border-bottom.p-4.shadow-none
+    input(type='text' placeholder='Поиск по контактам').form-control.border-0.border-bottom.p-4.shadow-none.text-truncate
     each contactsByLetter, letter in contacts
       p.text-muted.mt-5= letter
       each contact in contactsByLetter

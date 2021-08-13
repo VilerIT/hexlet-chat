@@ -3813,12 +3813,18 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    overflow: hidden; }
   .contact-name {
-    font-weight: bold; }
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .contact-desc {
+    overflow: hidden;
     color: #6c757d;
     font-size: 80%;
+    white-space: nowrap;
     text-overflow: ellipsis; }
   .contact-title {
     display: flex;

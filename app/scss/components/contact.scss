@@ -18,20 +18,30 @@
     width: 100%;
 
     padding: map-get($spacers, 4);
+
+    overflow: hidden;
   }
 
   &-name {
+    overflow: hidden;
+
     font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &-desc {
+    overflow: hidden;
+
     color: $secondary;
     font-size: $small-font-size;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
 
   &-title {
     display: flex;
+
     justify-content: space-between;
   }
 
