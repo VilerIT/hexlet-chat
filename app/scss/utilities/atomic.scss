@@ -1,6 +1,6 @@
 // Widths and heights for different sizes (in px)
 
-$sizes-px: 25px, 50px, 75px, 100px;
+$sizes-px: 15px, 25px, 50px, 75px, 90px, 100px;
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {

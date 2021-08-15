@@ -23,20 +23,15 @@
   }
 
   &-name {
-    overflow: hidden;
-
     font-weight: bold;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
+    @include text-truncate();
   }
 
   &-desc {
-    overflow: hidden;
-
     color: $secondary;
     font-size: $small-font-size;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    @include text-truncate();
   }
 
   &-title {

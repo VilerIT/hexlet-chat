@@ -1,0 +1,40 @@
+-
+  const profileDetails = [
+    {
+      title: 'Страна',
+      value: 'Москва, Россия',
+      iconSrc: 'images/icons/bootstrap-icons.svg#globe',
+    },
+    {
+      title: 'Телефон',
+      value: '+7 (499) 123-45-67',
+      iconSrc: 'images/icons/bootstrap-icons.svg#telephone',
+    },
+    {
+      title: 'Email',
+      value: 'nikita.m@hexlet.io',
+      iconSrc: 'images/icons/bootstrap-icons.svg#envelope',
+    },
+    {
+      title: 'Twitter',
+      value: '@n__mikhaylov',
+      iconSrc: 'images/icons/bootstrap-icons.svg#people',
+    },
+  ];
+
+include ../components/profile-detail.pug
+.tab-pane.fade.show.active.h-100.bg-white.pt-5.px-4.hide-scrollbar#profile(role='tabpanel' aria-labelledby='profile-tab')
+  h1.h2.font-weight-bold.mb-4 Профиль
+  input(type='text' placeholder='Поиск по сообщениям').form-control.border-0.border-bottom.mb-5.p-4.shadow-none.text-truncate
+  .card.border-0.py-3.mb-3
+    .card-body.text-center
+      img(src='images/avatar_1.jpg' alt='Картинка Кодовёнка').rounded-circle.mb-3.h-90px.w-90px
+      p.font-weight-bold Кодовёнок Хекслетович
+      p.text-muted Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+  .card.border-0.py-3
+    .card-body
+      ul.list-group.list-group-flush
+        each detail in profileDetails
+          - const { title, value, iconSrc } = detail;
+          +profileDetail(title, value, iconSrc)
+
