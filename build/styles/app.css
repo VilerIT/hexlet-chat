@@ -3049,66 +3049,66 @@ a.text-dark:hover, a.text-dark:focus {
 .hide-scrollbar::-webkit-scrollbar {
   display: none; }
 
-.rounded-top-left {
+.radius-top-left {
   border-top-left-radius: 1rem; }
 
-.rounded-top-right {
+.radius-top-right {
   border-top-right-radius: 1rem; }
 
-.rounded-bottom-left {
+.radius-bottom-left {
   border-bottom-left-radius: 1rem; }
 
-.rounded-bottom-right {
+.radius-bottom-right {
   border-bottom-right-radius: 1rem; }
 
 @media (min-width: 576px) {
-  .rounded-sm-top-left {
+  .radius-sm-top-left {
     border-top-left-radius: 1rem; }
-  .rounded-sm-top-right {
+  .radius-sm-top-right {
     border-top-right-radius: 1rem; }
-  .rounded-sm-bottom-left {
+  .radius-sm-bottom-left {
     border-bottom-left-radius: 1rem; }
-  .rounded-sm-bottom-right {
+  .radius-sm-bottom-right {
     border-bottom-right-radius: 1rem; } }
 
 @media (min-width: 768px) {
-  .rounded-md-top-left {
+  .radius-md-top-left {
     border-top-left-radius: 1rem; }
-  .rounded-md-top-right {
+  .radius-md-top-right {
     border-top-right-radius: 1rem; }
-  .rounded-md-bottom-left {
+  .radius-md-bottom-left {
     border-bottom-left-radius: 1rem; }
-  .rounded-md-bottom-right {
+  .radius-md-bottom-right {
     border-bottom-right-radius: 1rem; } }
 
 @media (min-width: 992px) {
-  .rounded-lg-top-left {
+  .radius-lg-top-left {
     border-top-left-radius: 1rem; }
-  .rounded-lg-top-right {
+  .radius-lg-top-right {
     border-top-right-radius: 1rem; }
-  .rounded-lg-bottom-left {
+  .radius-lg-bottom-left {
     border-bottom-left-radius: 1rem; }
-  .rounded-lg-bottom-right {
+  .radius-lg-bottom-right {
     border-bottom-right-radius: 1rem; } }
 
 @media (min-width: 1200px) {
-  .rounded-xl-top-left {
+  .radius-xl-top-left {
     border-top-left-radius: 1rem; }
-  .rounded-xl-top-right {
+  .radius-xl-top-right {
     border-top-right-radius: 1rem; }
-  .rounded-xl-bottom-left {
+  .radius-xl-bottom-left {
     border-bottom-left-radius: 1rem; }
-  .rounded-xl-bottom-right {
+  .radius-xl-bottom-right {
     border-bottom-right-radius: 1rem; } }
 
 @media (min-width: 1600px) {
-  .rounded-xxl-top-left {
+  .radius-xxl-top-left {
     border-top-left-radius: 1rem; }
-  .rounded-xxl-top-right {
+  .radius-xxl-top-right {
     border-top-right-radius: 1rem; }
-  .rounded-xxl-bottom-left {
+  .radius-xxl-bottom-left {
     border-bottom-left-radius: 1rem; }
-  .rounded-xxl-bottom-right {
+  .radius-xxl-bottom-right {
     border-bottom-right-radius: 1rem; } }
 
 .nav {
