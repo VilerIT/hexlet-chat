@@ -18,22 +18,6 @@ $sizes-px: 15px, 25px, 50px, 75px, 90px, 100px;
   }
 }
 
-// Border styles override
-
-$sides: 'left', 'right', 'bottom', 'top';
-
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @each $side in $sides {
-      .border#{$infix}-#{$side} {
-        border-#{$side}: 1px solid $border-color !important;
-      }
-    }
-  }
-}
-
 .hide-scrollbar {
   @include hide-scrollbar();
 }

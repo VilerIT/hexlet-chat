@@ -2978,68 +2978,6 @@ a.text-dark:hover, a.text-dark:focus {
   .h-xxl-100px {
     height: 100px !important; } }
 
-.border-left {
-  border-left: 1px solid #efefef !important; }
-
-.border-right {
-  border-right: 1px solid #efefef !important; }
-
-.border-bottom {
-  border-bottom: 1px solid #efefef !important; }
-
-.border-top {
-  border-top: 1px solid #efefef !important; }
-
-@media (min-width: 576px) {
-  .border-sm-left {
-    border-left: 1px solid #efefef !important; }
-  .border-sm-right {
-    border-right: 1px solid #efefef !important; }
-  .border-sm-bottom {
-    border-bottom: 1px solid #efefef !important; }
-  .border-sm-top {
-    border-top: 1px solid #efefef !important; } }
-
-@media (min-width: 768px) {
-  .border-md-left {
-    border-left: 1px solid #efefef !important; }
-  .border-md-right {
-    border-right: 1px solid #efefef !important; }
-  .border-md-bottom {
-    border-bottom: 1px solid #efefef !important; }
-  .border-md-top {
-    border-top: 1px solid #efefef !important; } }
-
-@media (min-width: 992px) {
-  .border-lg-left {
-    border-left: 1px solid #efefef !important; }
-  .border-lg-right {
-    border-right: 1px solid #efefef !important; }
-  .border-lg-bottom {
-    border-bottom: 1px solid #efefef !important; }
-  .border-lg-top {
-    border-top: 1px solid #efefef !important; } }
-
-@media (min-width: 1200px) {
-  .border-xl-left {
-    border-left: 1px solid #efefef !important; }
-  .border-xl-right {
-    border-right: 1px solid #efefef !important; }
-  .border-xl-bottom {
-    border-bottom: 1px solid #efefef !important; }
-  .border-xl-top {
-    border-top: 1px solid #efefef !important; } }
-
-@media (min-width: 1600px) {
-  .border-xxl-left {
-    border-left: 1px solid #efefef !important; }
-  .border-xxl-right {
-    border-right: 1px solid #efefef !important; }
-  .border-xxl-bottom {
-    border-bottom: 1px solid #efefef !important; }
-  .border-xxl-top {
-    border-top: 1px solid #efefef !important; } }
-
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -3110,6 +3048,81 @@ a.text-dark:hover, a.text-dark:focus {
     border-bottom-left-radius: 1rem; }
   .radius-xxl-bottom-right {
     border-bottom-right-radius: 1rem; } }
+
+.border {
+  border: 1px solid #efefef !important; }
+
+.border-left {
+  border-left: 1px solid #efefef !important; }
+
+.border-right {
+  border-right: 1px solid #efefef !important; }
+
+.border-bottom {
+  border-bottom: 1px solid #efefef !important; }
+
+.border-top {
+  border-top: 1px solid #efefef !important; }
+
+@media (min-width: 576px) {
+  .border-sm {
+    border: 1px solid #efefef !important; }
+  .border-sm-left {
+    border-left: 1px solid #efefef !important; }
+  .border-sm-right {
+    border-right: 1px solid #efefef !important; }
+  .border-sm-bottom {
+    border-bottom: 1px solid #efefef !important; }
+  .border-sm-top {
+    border-top: 1px solid #efefef !important; } }
+
+@media (min-width: 768px) {
+  .border-md {
+    border: 1px solid #efefef !important; }
+  .border-md-left {
+    border-left: 1px solid #efefef !important; }
+  .border-md-right {
+    border-right: 1px solid #efefef !important; }
+  .border-md-bottom {
+    border-bottom: 1px solid #efefef !important; }
+  .border-md-top {
+    border-top: 1px solid #efefef !important; } }
+
+@media (min-width: 992px) {
+  .border-lg {
+    border: 1px solid #efefef !important; }
+  .border-lg-left {
+    border-left: 1px solid #efefef !important; }
+  .border-lg-right {
+    border-right: 1px solid #efefef !important; }
+  .border-lg-bottom {
+    border-bottom: 1px solid #efefef !important; }
+  .border-lg-top {
+    border-top: 1px solid #efefef !important; } }
+
+@media (min-width: 1200px) {
+  .border-xl {
+    border: 1px solid #efefef !important; }
+  .border-xl-left {
+    border-left: 1px solid #efefef !important; }
+  .border-xl-right {
+    border-right: 1px solid #efefef !important; }
+  .border-xl-bottom {
+    border-bottom: 1px solid #efefef !important; }
+  .border-xl-top {
+    border-top: 1px solid #efefef !important; } }
+
+@media (min-width: 1600px) {
+  .border-xxl {
+    border: 1px solid #efefef !important; }
+  .border-xxl-left {
+    border-left: 1px solid #efefef !important; }
+  .border-xxl-right {
+    border-right: 1px solid #efefef !important; }
+  .border-xxl-bottom {
+    border-bottom: 1px solid #efefef !important; }
+  .border-xxl-top {
+    border-top: 1px solid #efefef !important; } }
 
 .nav {
   display: flex;

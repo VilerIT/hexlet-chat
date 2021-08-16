@@ -1,0 +1,13 @@
+$sides: '', '-left', '-right', '-bottom', '-top'; // '' - all sides.
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $side in $sides {
+      .border#{$infix}#{$side} {
+        border#{$side}: 1px solid $border-color !important;
+      }
+    }
+  }
+}
