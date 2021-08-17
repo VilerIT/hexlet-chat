@@ -4,12 +4,13 @@
 //-
 //- tabName - The name of the tab panel to which this component will switch.
 //- iconSrc - The source of the tab's icon.
-//- name - The displayed name of the tab.
 //- selected - Indicates, whether the tab is selected.
+//- name (optional) - The displayed name of the tab.
 
-mixin navTab(tabName, iconSrc, name, selected)
+mixin navTab(tabName, iconSrc, selected, name=null)
   li.d-flex.nav-item(role='presentation')
     a.d-flex.align-items-center.text-white.border-0.nav-link(href=`#${tabName}` role='tab' data-toggle='tab' aria-controls=`${tabName}` aria-selected=`${selected}`)
       svg.mr-2.h-25px.w-25px(fill='currentColor')
         use(xlink:href=`${iconSrc}`)
-      span.small.navbar-text.d-none.d-md-inline= name
+      if name
+        span.small.navbar-text.d-none.d-md-inline= name

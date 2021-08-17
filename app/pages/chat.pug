@@ -1,11 +1,22 @@
-doctype html
-html(lang='ru').h-100
-  include includes/head.pug
-  +head('Чат — VilerChat')
-  body.bg-gray.p-md-4.h-100
-    .container-fluid.container-xxl.h-100.overflow-hidden
-      .row.h-100
-        main.col-12.col-md-4.d-flex.flex-column.h-100.p-0
-          include includes/header.pug
-          .h-100.border-right.bg-white.pt-5.px-4.rounded-md-bottom-left
-        .d-flex.col-12.col-md-8.h-100.p-0.bg-white.rounded-md-top-right.rounded-md-bottom-right
+extends includes/base-structure.pug
+include components/nav-tab.pug
+include components/header.pug
+
+block content
+  main.col-md-4.d-flex.flex-column.h-100.p-0
+    +header
+      li.d-flex.d-md-none.nav-item(role='presentation')
+        a.d-flex.align-items-center.text-white.border-0.nav-link(href='#current-chat' role='tab' data-toggle='tab' aria-controls='current-chat' aria-selected='false')
+          svg.mr-2.h-25px.w-25px(fill='currentColor')
+            use(xlink:href='images/icons/sprite.svg#chat-left-text')
+      if name
+        span.small.navbar-text.d-none.d-md-inline= name
+      include includes/default-nav.pug
+    .tab-content.h-100.hide-scrollbar
+      include includes/contacts.pug
+      include includes/chats.pug
+      include includes/profile.pug
+  .d-flex.flex-column.justify-content-center.align-items-center.border-left.col-12.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
+    img(src='images/avatar_1.jpg' alt='Картинка Кодовёнка').rounded-circle.mb-3
+    span.font-weight-bold Привет, Кодовёнок
+    span.text-muted.small Выбери чат, чтобы начать общаться
