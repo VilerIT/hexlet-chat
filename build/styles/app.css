@@ -4308,6 +4308,9 @@ textarea.form-control {
   @media (prefers-reduced-motion: reduce) {
     .contact {
       transition: none; } }
+  .contact:hover {
+    color: inherit;
+    text-decoration: none; }
   .contact-body {
     display: flex;
     flex-direction: column;
@@ -4331,13 +4334,91 @@ textarea.form-control {
   .contact-time {
     color: #6c757d;
     font-size: 80%; }
-  .contact:hover {
-    color: inherit;
-    text-decoration: none;
-    background: #6f42c1; }
-  .contact:hover .contact-name,
-  .contact:hover .contact-desc,
-  .contact:hover .contact-time {
+
+.contact:not(.contact-hoverless):hover {
+  background: #6f42c1; }
+  .contact:not(.contact-hoverless):hover .contact-name,
+  .contact:not(.contact-hoverless):hover .contact-desc,
+  .contact:not(.contact-hoverless):hover .contact-time {
+    color: #fff; }
+
+.chat-head {
+  position: sticky;
+  border-bottom: 1px solid #efefef; }
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  width: 100%; }
+  @media (min-width: 576px) {
+    .message {
+      width: 75%; } }
+  .message-body {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+  .message-name {
+    margin-bottom: 0.25rem;
+    font-weight: bold; }
+  .message-text {
+    margin-bottom: 0.5rem; }
+  .message-info {
+    padding-top: 0.25rem;
+    font-size: 80%;
+    border-top: 1px solid; }
+
+.message-body-gray {
+  color: #6c757d;
+  background-color: #efefef; }
+  .message-body-gray .message-name {
+    color: #343a40; }
+
+.message-body-primary {
+  color: #fff;
+  background-color: #4545a5; }
+  .message-body-primary .message-name {
+    color: #fff; }
+
+.message-body-secondary {
+  color: #fff;
+  background-color: #6c757d; }
+  .message-body-secondary .message-name {
+    color: #fff; }
+
+.message-body-success {
+  color: #fff;
+  background-color: #28a745; }
+  .message-body-success .message-name {
+    color: #fff; }
+
+.message-body-info {
+  color: #fff;
+  background-color: #17a2b8; }
+  .message-body-info .message-name {
+    color: #fff; }
+
+.message-body-warning {
+  color: #6c757d;
+  background-color: #ffc107; }
+  .message-body-warning .message-name {
+    color: #343a40; }
+
+.message-body-danger {
+  color: #fff;
+  background-color: #dc3545; }
+  .message-body-danger .message-name {
+    color: #fff; }
+
+.message-body-light {
+  color: #6c757d;
+  background-color: #fbfbfb; }
+  .message-body-light .message-name {
+    color: #343a40; }
+
+.message-body-dark {
+  color: #fff;
+  background-color: #343a40; }
+  .message-body-dark .message-name {
     color: #fff; }
 
 :root {

@@ -1,0 +1,50 @@
+$message-border-radius: 1rem;
+
+.message {
+  display: flex;
+  align-items: flex-end;
+
+  width: 100%;
+
+  @include media-breakpoint-up('sm') {
+    width: 75%;
+  }
+
+  &-body {
+    padding: map-get($spacers, 4);
+
+    border-radius: $message-border-radius;
+
+    @include box-shadow($box-shadow-sm);
+  }
+
+  &-name {
+    margin-bottom: map-get($spacers, 1);
+
+    font-weight: bold;
+  }
+
+  &-text {
+    margin-bottom: map-get($spacers, 2);
+  }
+
+  &-info {
+    padding-top: map-get($spacers, 1);
+
+    font-size: $small-font-size;
+
+    border-top: 1px solid;
+  }
+}
+
+@each $color-name, $color in $theme-colors {
+  .message-body-#{$color-name} {
+    color: color-yiq($color, $secondary);
+
+    background-color: $color;
+
+    .message-name {
+      color: color-yiq($color, $dark);
+    }
+  }
+}

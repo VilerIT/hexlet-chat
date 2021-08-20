@@ -9,14 +9,13 @@ block content
         a.d-flex.align-items-center.text-white.border-0.nav-link(href='#current-chat' role='tab' data-toggle='tab' aria-controls='current-chat' aria-selected='false')
           svg.mr-2.h-25px.w-25px(fill='currentColor')
             use(xlink:href='images/icons/sprite.svg#chat-left-text')
-      if name
-        span.small.navbar-text.d-none.d-md-inline= name
       include includes/default-nav.pug
     .tab-content.h-100.hide-scrollbar
       include includes/contacts.pug
       include includes/chats.pug
       include includes/profile.pug
-  .d-flex.flex-column.justify-content-center.align-items-center.border-left.col-12.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
-    img(src='images/avatar_1.jpg' alt='Картинка Кодовёнка').rounded-circle.mb-3
-    span.font-weight-bold Привет, Кодовёнок
-    span.text-muted.small Выбери чат, чтобы начать общаться
+      .tab-pane.fade.h-100.bg-white.hide-scrollbar#current-chat(role='tabpanel' aria-labelledby='current-chat-tab')
+        .d-md-none
+          include includes/current-chat.pug
+  .d-none.d-md-flex.flex-column.border-left.col-12.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
+    include includes/current-chat.pug
