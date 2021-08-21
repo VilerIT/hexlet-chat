@@ -1,0 +1,32 @@
+//- Message component.
+//-
+//- Represents a message. Styles for this component can be found in scss/components/message.scss
+//- rightMessage and leftMessage use identical structures, their main difference is the side on which the message will appear.
+//-
+//- text - The text of the message.
+//- variant - Must represent a name of a theme color, which will be used as a background for the message.
+//- name (optional) - The name of the sender of the message.
+//- avatarSrc (optional) - The source file of the avatar that will be displayed next to the message.
+//- block (optional) - Additional information that will be separated from the text.
+
+mixin messageBase(side, text, variant, avatarSrc=null, name=null)
+  div(class=`message message-${side}`)
+    if avatarSrc
+      img.d-none.d-md-block.avatar.mr-3(src=`${avatarSrc}` alt='Аватар пользователя')
+    div(class=`message-body message-body-${variant}`)
+      if name
+        .message-name= name
+      .message-text= text
+      if block
+        .message-info
+          block
+    
+mixin leftMessage(text, variant, avatarSrc=null, name=null)
+  +messageBase('left', text, variant, avatarSrc, name)
+    if block
+      block
+
+mixin rightMessage(text, variant, avatarSrc=null, name=null)
+  +messageBase('right', text, variant, avatarSrc, name)
+    if block
+        block

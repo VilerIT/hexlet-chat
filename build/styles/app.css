@@ -4344,15 +4344,21 @@ textarea.form-control {
 
 .chat-head {
   position: sticky;
+  top: 0;
   border-bottom: 1px solid #efefef; }
 
 .message {
   display: flex;
   align-items: flex-end;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1rem; }
   @media (min-width: 576px) {
     .message {
       width: 75%; } }
+  .message-left {
+    margin-right: auto; }
+  .message-right {
+    margin-left: auto; }
   .message-body {
     padding: 1.5rem;
     border-radius: 1rem;
@@ -4365,7 +4371,7 @@ textarea.form-control {
   .message-info {
     padding-top: 0.25rem;
     font-size: 80%;
-    border-top: 1px solid; }
+    border-top: 1px solid #efefef; }
 
 .message-body-gray {
   color: #6c757d;

@@ -1,4 +1,5 @@
-.d-flex.flex-column
+include ../components/message.pug
+.d-flex.flex-column.hide-scrollbar
   .chat-head
     .contact.contact-hoverless.shadow-none
       img.avatar(src='images/avatar_4.jpg' alt='Аватар пользователя')
@@ -7,10 +8,36 @@
           span.contact-name Вениамин Редакторович
         span.contact-desc Онлайн
   .chat-body.p-5
-    .message
-      img.d-none.d-md-block.avatar.mr-3(src='images/avatar_4.jpg' alt='Аватар пользователя')
-      .message-body.message-body-light
-        .message-name Вениамин Редакторович
-        .message-text
-          | Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
-        .message-info 8 минут назад
+    +leftMessage(
+      'Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?',
+      'light',
+      'images/avatar_4.jpg',
+      'Вениамин Редакторович',
+    )
+      | 8 минут назад
+    +rightMessage(
+      'Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень',
+      'primary',
+      'images/avatar_1.jpg',
+    )
+      | 5 минут назад
+    +leftMessage(
+      'Лады',
+      'light',
+      'images/avatar_4.jpg',
+      'Вениамин Редакторович',
+    )
+      | 5 минут назад
+    +rightMessage(
+      'А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие',
+      'primary',
+      'images/avatar_1.jpg',
+    )
+      | 3 минуты назад
+    +leftMessage(
+      'o_O',
+      'light',
+      'images/avatar_4.jpg',
+      'Вениамин Редакторович',
+    )
+      | Только что
