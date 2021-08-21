@@ -4345,6 +4345,7 @@ textarea.form-control {
 .chat-head {
   position: sticky;
   top: 0;
+  background-color: #fff;
   border-bottom: 1px solid #efefef; }
 
 .message {

@@ -5,10 +5,11 @@
 //- avatarSrc - The source file of avatar.
 //- name - The name of the contact.
 //- desc - The description, that is displayed below the name.
-//- time (optional) - Time that will be displayed right to the name. 
+//- time (optional) - Time that will be displayed right to the name.
+//- href (optional) - href attribute of the contact. "#" by default.
 
-mixin contact(avatarSrc, name, desc, time=null)
-  a.contact.mb-3(href='#')
+mixin contact(avatarSrc, name, desc, time=null, href='#')
+  a.contact.mb-3(href=`${href}`)
     img.avatar(src=`${avatarSrc}` alt='Аватар пользователя')
     .contact-body
       .contact-title

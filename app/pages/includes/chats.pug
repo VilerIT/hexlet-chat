@@ -26,4 +26,4 @@ include ../components/contact.pug
   input(type='text' placeholder='Поиск по сообщениям').form-control.border-0.border-bottom.mb-5.p-4.shadow-none.text-truncate
   each chat in chats
     - const { name, lastMessage, avatar, time } = chat;
-    +contact(avatar, name, lastMessage, time)
+    +contact(avatar, name, lastMessage, time, 'chat.html')
