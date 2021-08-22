@@ -1,6 +1,6 @@
 include ../components/message.pug
-.d-flex.flex-column.hide-scrollbar
-  .chat-head
+.d-flex.flex-column.hide-scrollbar-md.radius-md-bottom-right.radius-md-top-right
+  .chat-header
     .contact.contact-hoverless.shadow-none
       img.avatar(src='images/avatar_4.jpg' alt='Аватар пользователя')
       .contact-body
@@ -41,3 +41,9 @@ include ../components/message.pug
       'Вениамин Редакторович',
     )
       | Только что
+  .chat-footer.mx-md-5.px-3
+    form.d-flex.justify-content-between.align-items-center
+      input.chat-input.px-3.py-4(type='text' name='message' placeholder='Напишите сообщение...')
+      button.btn.btn-primary.rounded-circle.w-50px.h-50px
+        svg.h-25px.w-25px(fill='currentColor')
+          use(xlink:href='images/icons/sprite.svg#send')

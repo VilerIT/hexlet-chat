@@ -1,11 +1,25 @@
 .chat {
-  &-head {
+  &-header,
+  &-footer {
     position: sticky;
 
+    background-color: $white;
+  }
+
+  &-header {
     top: 0;
 
-    background-color: $white;
-
     border-bottom: 1px solid $border-color;
+  }
+
+  &-footer {
+    bottom: 0;
+
+    border-top: 1px solid $border-color;
+  }
+
+  &-input {
+    border: none;
+    outline: none;
   }
 }

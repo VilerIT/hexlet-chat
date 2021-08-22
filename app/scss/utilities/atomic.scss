@@ -18,6 +18,12 @@ $sizes-px: 15px, 25px, 50px, 75px, 90px, 100px;
   }
 }
 
-.hide-scrollbar {
-  @include hide-scrollbar();
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .hide-scrollbar#{$infix} {
+      @include hide-scrollbar();
+    }
+  }
 }

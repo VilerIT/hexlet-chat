@@ -57,6 +57,7 @@ $container-max-widths: map-merge($container-max-widths, $custom-container-max-wi
 @import '../../node_modules/bootstrap/scss/forms';
 @import '../../node_modules/bootstrap/scss/card';
 @import '../../node_modules/bootstrap/scss/list-group';
+@import '../../node_modules/bootstrap/scss/buttons';
 @import './components/nav';
 @import './components/avatar';
 @import './components/contact';
