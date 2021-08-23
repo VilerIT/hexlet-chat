@@ -20,7 +20,7 @@ block content
         include includes/chats.pug
       +tabPane(false, 'profile', 'profile-tab')
         include includes/profile.pug
-      +tabPane(false, 'current-chat', 'current-chat-tab')
+      .tab-pane.fade.h-100.bg-white.hide-scrollbar#current-chat(role='tabpanel' aria-labelledby='current-chat-tab')
         .d-md-none
           include includes/current-chat.pug
   .d-none.d-md-flex.flex-column.border-left.col-12.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
