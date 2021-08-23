@@ -7,7 +7,5 @@
 //- labelledby - The aria-labelledby attribute. Must be the same as the ID of the corresponding Nav Tab. 
 
 mixin tabPane(isActive, id, labelledby)
-  - const activeClasses = isActive ? 'show active' : '';
-  - const classes = `tab-pane fade h-100 pt-5 px-4 hide-scrollbar ${activeClasses}`;
-  div(class=`${classes}` id=`${id}` role='tabpanel' aria-labelledby=`${labelledby}`)
+  .tab-pane.fade.h-100.pt-5.px-4.hide-scrollbar(class=`${isActive ? 'show active' : ''}` id=`${id}` role='tabpanel' aria-labelledby=`${labelledby}`)
     block

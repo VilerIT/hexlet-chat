@@ -8,9 +8,9 @@
 //- selected - Indicates, whether the tab is selected.
 //- name (optional) - The displayed name of the tab.
 
-mixin navTab(id, tabName, iconSrc, selected, name=null)
+mixin navTab(id, tabName, iconSrc, isActive, name=null)
   li.d-flex.nav-item(role='presentation')
-    a.d-flex.align-items-center.text-white.border-0.nav-link(id=`${id}` href=`#${tabName}` role='tab' data-toggle='tab' aria-controls=`${tabName}` aria-selected=`${selected}`)
+    a.d-flex.align-items-center.text-white.border-0.nav-link(id=`${id}` class=`${isActive ? 'active' : ''}` href=`#${tabName}` role='tab' data-toggle='tab' aria-controls=`${tabName}` aria-selected=`${selected}`)
       svg.mr-2.h-25px.w-25px(fill='currentColor')
         use(xlink:href=`${iconSrc}`)
       if name

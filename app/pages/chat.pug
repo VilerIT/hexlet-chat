@@ -10,7 +10,9 @@ block content
         a.d-flex.align-items-center.text-white.border-0.nav-link#current-chat-tab(href='#current-chat' role='tab' data-toggle='tab' aria-controls='current-chat' aria-selected='false')
           svg.mr-2.h-25px.w-25px(fill='currentColor')
             use(xlink:href='images/icons/sprite.svg#chat-left-text')
-      include includes/default-nav.pug
+      +navTab('contacts-tab', 'contacts', 'images/icons/sprite.svg#people', false, 'Контакты')
+      +navTab('chats-tab', 'chats', 'images/icons/sprite.svg#chat', true, 'Сообщения')
+      +navTab('profile-tab', 'profile', 'images/icons/sprite.svg#person', false, 'Профиль')
     .tab-content.h-100.bg-white.hide-scrollbar
       +tabPane(false, 'contacts', 'contacts-tab')
         include includes/contacts.pug

@@ -6,7 +6,9 @@ include components/header.pug
 block content
   main.col-12.col-md-4.d-flex.flex-column.h-100.p-0
     +header
-      include includes/default-nav.pug
+      +navTab('contacts-tab', 'contacts', 'images/icons/sprite.svg#people', true, 'Контакты')
+      +navTab('chats-tab', 'chats', 'images/icons/sprite.svg#chat', false, 'Сообщения')
+      +navTab('profile-tab', 'profile', 'images/icons/sprite.svg#person', false, 'Профиль')
     .tab-content.h-100.bg-white.hide-scrollbar
       +tabPane(true, 'contacts', 'contacts-tab')
         include includes/contacts.pug
