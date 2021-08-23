@@ -1,4 +1,5 @@
 extends includes/base-structure.pug
+include components/tab-pane.pug
 include components/nav-tab.pug
 include components/header.pug
 
@@ -7,9 +8,12 @@ block content
     +header
       include includes/default-nav.pug
     .tab-content.h-100.bg-white.hide-scrollbar
-      include includes/contacts.pug
-      include includes/chats.pug
-      include includes/profile.pug
+      +tabPane(true, 'contacts', 'contacts-tab')
+        include includes/contacts.pug
+      +tabPane(false, 'chats', 'chats-tab')
+        include includes/chats.pug
+      +tabPane(false, 'profile', 'profile-tab')
+        include includes/profile.pug
   .d-flex.flex-column.justify-content-center.align-items-center.border-left.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
     img(src='images/avatar_1.jpg' alt='Картинка Кодовёнка').rounded-circle.mb-3
     span.font-weight-bold Привет, Кодовёнок

@@ -21,7 +21,7 @@
   ];
 
 include ../components/contact.pug
-.tab-pane.fade.h-100.bg-white.pt-5.px-4.hide-scrollbar#chats(role='tabpanel' aria-labelledby='chats-tab')
+block chats-tab-content
   h1.h2.font-weight-bold.mb-4 Чаты
   input(type='text' placeholder='Поиск по сообщениям').form-control.border-0.border-bottom.mb-5.p-4.shadow-none.text-truncate
   each chat in chats

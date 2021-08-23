@@ -1,4 +1,5 @@
 extends includes/base-structure.pug
+include components/tab-pane.pug
 include components/nav-tab.pug
 include components/header.pug
 
@@ -11,10 +12,13 @@ block content
             use(xlink:href='images/icons/sprite.svg#chat-left-text')
       include includes/default-nav.pug
     .tab-content.h-100.bg-white.hide-scrollbar
-      include includes/contacts.pug
-      include includes/chats.pug
-      include includes/profile.pug
-      .tab-pane.fade.h-100.bg-white.hide-scrollbar#current-chat(role='tabpanel' aria-labelledby='current-chat-tab')
+      +tabPane(false, 'contacts', 'contacts-tab')
+        include includes/contacts.pug
+      +tabPane(true, 'chats', 'chats-tab')
+        include includes/chats.pug
+      +tabPane(false, 'profile', 'profile-tab')
+        include includes/profile.pug
+      +tabPane(false, 'current-chat', 'current-chat-tab')
         .d-md-none
           include includes/current-chat.pug
   .d-none.d-md-flex.flex-column.border-left.col-12.col-md-8.h-100.p-0.bg-white.radius-md-top-right.radius-md-bottom-right
