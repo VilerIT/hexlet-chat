@@ -2,14 +2,15 @@
 //-
 //- An upgraded Bootstrap component with icon and name.
 //-
+//- id - The ID of the tab.
 //- tabName - The name of the tab panel to which this component will switch.
 //- iconSrc - The source of the tab's icon.
 //- selected - Indicates, whether the tab is selected.
 //- name (optional) - The displayed name of the tab.
 
-mixin navTab(tabName, iconSrc, selected, name=null)
+mixin navTab(id, tabName, iconSrc, selected, name=null)
   li.d-flex.nav-item(role='presentation')
-    a.d-flex.align-items-center.text-white.border-0.nav-link(href=`#${tabName}` role='tab' data-toggle='tab' aria-controls=`${tabName}` aria-selected=`${selected}`)
+    a.d-flex.align-items-center.text-white.border-0.nav-link(id=`${id}` href=`#${tabName}` role='tab' data-toggle='tab' aria-controls=`${tabName}` aria-selected=`${selected}`)
       svg.mr-2.h-25px.w-25px(fill='currentColor')
         use(xlink:href=`${iconSrc}`)
       if name

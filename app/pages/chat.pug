@@ -6,11 +6,11 @@ block content
   main.col-md-4.d-flex.flex-column.h-100.p-0
     +header
       li.d-flex.d-md-none.nav-item(role='presentation')
-        a.d-flex.align-items-center.text-white.border-0.nav-link(href='#current-chat' role='tab' data-toggle='tab' aria-controls='current-chat' aria-selected='false')
+        a.d-flex.align-items-center.text-white.border-0.nav-link#current-chat-tab(href='#current-chat' role='tab' data-toggle='tab' aria-controls='current-chat' aria-selected='false')
           svg.mr-2.h-25px.w-25px(fill='currentColor')
             use(xlink:href='images/icons/sprite.svg#chat-left-text')
       include includes/default-nav.pug
-    .tab-content.h-100.hide-scrollbar
+    .tab-content.h-100.bg-white.hide-scrollbar
       include includes/contacts.pug
       include includes/chats.pug
       include includes/profile.pug

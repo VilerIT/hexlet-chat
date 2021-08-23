@@ -63,6 +63,7 @@ $container-max-widths: map-merge($container-max-widths, $custom-container-max-wi
 @import './components/contact';
 @import './components/chat';
 @import './components/message';
+@import '../../node_modules/bootstrap/scss/transitions';
 @import '../../node_modules/bootstrap/scss/root';
 @import '../../node_modules/bootstrap/scss/reboot';
 @import '../../node_modules/bootstrap/scss/type';
