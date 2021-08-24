@@ -4,7 +4,7 @@
 
 * **[README на русском](./README.ru-RU.md)**
 
-Layout design for "Hexlet Chat". Contains two pages: "[Home](https://viler-hexletchat.surge.sh/)" and "[Chat](https://viler-hexletchat.surge.sh/chat.html)".
+Layout design for "Hexlet Chat". Contains two pages: "[Home](https://viler-hexlet-chat.surge.sh/)" and "[Chat](https://viler-hexlet-chat.surge.sh/chat.html)".
 
 Technologies used: [SCSS](https://sass-lang.com/), [Pug](https://pugjs.org/), [Gulp](https://gulpjs.com/).
 
