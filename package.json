@@ -1,21 +1,21 @@
 {
-  "name": "layout-designer-project-lvl3",
+  "name": "hexlet-chat",
   "version": "1.0.0",
-  "description": "Layout design for \"Vilerchat\".",
+  "description": "Layout design for \"HexletChat\".",
   "main": "\"\"",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VilerIT/layout-designer-project-lvl3.git"
+    "url": "git+https://github.com/VilerIT/hexlet-chat.git"
   },
   "author": "VilerIT",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VilerIT/layout-designer-project-lvl3/issues"
+    "url": "https://github.com/VilerIT/hexlet-chat/issues"
   },
-  "homepage": "https://github.com/VilerIT/layout-designer-project-lvl3#readme",
+  "homepage": "https://github.com/VilerIT/hexlet-chat#readme",
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.5.0",
