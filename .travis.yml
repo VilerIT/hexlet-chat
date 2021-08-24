@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - 14
 after_success:
-  - surge --project ./build --domain vilerchat.surge.sh
+  - surge --project ./build --domain viler-hexletchat.surge.sh
